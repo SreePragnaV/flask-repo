@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask S3 check</title>
+  </head>
+  <body>
+    <div class="content">
+        <h3>S3 Flask Check</h3>
+          <div>
+          <h3>These are the contents in the employee-id bucket :</h3>
+          <ul>
+            {% for item in contents %}
+              <li>
+                {{ item.Key }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>
